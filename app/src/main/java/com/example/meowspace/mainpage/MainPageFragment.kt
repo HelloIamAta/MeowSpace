@@ -6,26 +6,46 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.meowspace.HomeFragment
 import com.example.meowspace.R
+import com.example.meowspace.databinding.FragmentMainPageBinding
+import com.example.meowspace.notification.NotificationFragment
 
-class MainPageFragment : Fragment() {
-
-    companion object {
-        fun newInstance() = MainPageFragment()
-    }
+class MainPageFragment : Fragment(R.layout.fragment_main_page) {
 
     private val viewModel: MainPageViewModel by viewModels()
+    private var binding : FragmentMainPageBinding? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
 
-        // TODO: Use the ViewModel
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val fbinding = FragmentMainPageBinding.bind(view)
+        binding = fbinding
+        openFragment(HomeFragment())
+
+        binding!!.bottomNavigationView.setOnItemSelectedListener {it ->
+            when (it.itemId){
+
+                R.id.home -> {
+                    openFragment(HomeFragment())
+                    true}
+
+                R.id.notification -> {
+                    openFragment(NotificationFragment())
+                    true
+                }
+                else -> false
+            }
+
+        }
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        return inflater.inflate(R.layout.fragment_main_page, container, false)
+    private fun openFragment(fragment: Fragment) {
+        val transaction = childFragmentManager.beginTransaction()
+        transaction.replace(R.id.navbar_screen, fragment)
+        transaction.addToBackStack(null)
+        transaction.commit()
     }
+
 }
