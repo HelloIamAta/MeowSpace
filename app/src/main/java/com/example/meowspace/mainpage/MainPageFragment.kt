@@ -3,10 +3,8 @@ package com.example.meowspace.mainpage
 import androidx.fragment.app.viewModels
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
-import com.example.meowspace.HomeFragment
+import com.example.meowspace.home.HomeFragment
 import com.example.meowspace.R
 import com.example.meowspace.databinding.FragmentMainPageBinding
 import com.example.meowspace.notification.NotificationFragment
@@ -37,7 +35,6 @@ class MainPageFragment : Fragment(R.layout.fragment_main_page) {
                 }
                 else -> false
             }
-
         }
     }
 

@@ -1,4 +1,4 @@
-package com.example.meowspace
+package com.example.meowspace.home
 
 import androidx.lifecycle.ViewModel
 
