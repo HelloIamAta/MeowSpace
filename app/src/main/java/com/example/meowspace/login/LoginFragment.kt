@@ -28,7 +28,6 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
 
         binding!!.loginButton.setOnClickListener {
             findNavController().navigate(R.id.action_loginFragment_to_mainPageFragment)
-           // navigateTo(R.id.action_loginFragment_to_mainPageFragment,findNavController())
         }
 
         val sentence = binding!!.registerTextview.text.toString()

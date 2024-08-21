@@ -5,4 +5,18 @@
     <string name="home">Home</string>
     <string name="notification">Notification</string>
     <string name="sign_up">Dont have an account? Sign Up </string>
+
+
+    <!--    test IMAGE-->
+
+    <string name="cats" translatable="false">a</string>
+    <string name="cats1" translatable="false">a1</string>
+    <string name="cats2" translatable="false">a2</string>
+    <string name="cats3" translatable="false">a3</string>
+    <string name="cats4" translatable="false">a4</string>
+    <string name="cats5" translatable="false">a5</string>
+    <string name="cats6" translatable="false">a6</string>
+    <string name="cats7" translatable="false">a7</string>
+    <string name="cats8" translatable="false">a8</string>
+
 </resources>

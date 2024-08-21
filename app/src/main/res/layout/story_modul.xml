@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="@color/white"
+    android:background="@color/white"
+    android:layout_marginStart="6dp"
+    android:layout_width="85dp"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/story_clickable"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="2dp"
+        app:cardCornerRadius="50dp"
+        app:strokeWidth="3dp"
+        android:clickable="true"
+        app:cardElevation="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/materialCardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/black">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/story_image"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/white" />
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <FrameLayout
+        android:id="@+id/materialCardView2"
+        android:layout_width="85dp"
+        android:layout_height="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/story_name"
+            android:layout_width="85dp"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="1234567890"
+            android:textColor="#6D6868"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
