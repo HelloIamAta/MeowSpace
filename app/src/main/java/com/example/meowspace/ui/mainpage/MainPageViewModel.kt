@@ -1,4 +1,4 @@
-package com.example.meowspace.mainpage
+package com.example.meowspace.ui.mainpage
 
 import androidx.lifecycle.ViewModel
 

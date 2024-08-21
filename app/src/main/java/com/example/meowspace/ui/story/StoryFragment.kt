@@ -1,4 +1,4 @@
-package com.example.meowspace.register
+package com.example.meowspace.ui.story
 
 import androidx.fragment.app.viewModels
 import android.os.Bundle
@@ -8,13 +8,10 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.meowspace.R
 
-class RegisterFragment : Fragment() {
+class StoryFragment : Fragment() {
 
-    companion object {
-        fun newInstance() = RegisterFragment()
-    }
 
-    private val viewModel: RegisterViewModel by viewModels()
+    private val viewModel: StoryViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,6 +23,6 @@ class RegisterFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        return inflater.inflate(R.layout.fragment_register, container, false)
+        return inflater.inflate(R.layout.fragment_story, container, false)
     }
 }

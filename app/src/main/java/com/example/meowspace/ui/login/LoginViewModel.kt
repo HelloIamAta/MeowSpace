@@ -1,7 +1,7 @@
-package com.example.meowspace.home
+package com.example.meowspace.ui.login
 
 import androidx.lifecycle.ViewModel
 
-class HomeViewModel : ViewModel() {
+class LoginViewModel : ViewModel() {
     // TODO: Implement the ViewModel
 }

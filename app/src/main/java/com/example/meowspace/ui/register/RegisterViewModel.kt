@@ -1,4 +1,4 @@
-package com.example.meowspace.register
+package com.example.meowspace.ui.register
 
 import androidx.lifecycle.ViewModel
 

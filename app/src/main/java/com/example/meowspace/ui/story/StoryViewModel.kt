@@ -1,7 +1,7 @@
-package com.example.meowspace.profil
+package com.example.meowspace.ui.story
 
 import androidx.lifecycle.ViewModel
 
-class ProfilViewModel : ViewModel() {
+class StoryViewModel : ViewModel() {
     // TODO: Implement the ViewModel
 }

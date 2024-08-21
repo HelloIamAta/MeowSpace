@@ -1,4 +1,4 @@
-package com.example.meowspace.splashscreen
+package com.example.meowspace.ui.splashscreen
 
 import android.os.Bundle
 import android.os.Handler

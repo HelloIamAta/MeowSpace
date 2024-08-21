@@ -1,4 +1,4 @@
-package com.example.meowspace.login
+package com.example.meowspace.ui.login
 
 import androidx.fragment.app.viewModels
 import android.os.Bundle

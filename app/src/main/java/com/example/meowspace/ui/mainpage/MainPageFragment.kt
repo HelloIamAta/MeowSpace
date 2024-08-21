@@ -1,13 +1,13 @@
-package com.example.meowspace.mainpage
+package com.example.meowspace.ui.mainpage
 
 import androidx.fragment.app.viewModels
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.View
-import com.example.meowspace.home.HomeFragment
+import com.example.meowspace.ui.home.HomeFragment
 import com.example.meowspace.R
 import com.example.meowspace.databinding.FragmentMainPageBinding
-import com.example.meowspace.notification.NotificationFragment
+import com.example.meowspace.ui.notification.NotificationFragment
 
 class MainPageFragment : Fragment(R.layout.fragment_main_page) {
 

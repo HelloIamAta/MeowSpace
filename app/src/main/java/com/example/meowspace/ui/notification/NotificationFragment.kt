@@ -1,4 +1,4 @@
-package com.example.meowspace.notification
+package com.example.meowspace.ui.notification
 
 import androidx.fragment.app.viewModels
 import android.os.Bundle

@@ -7,33 +7,61 @@
 
     <fragment
         android:id="@+id/splashFragment"
-        android:name="com.example.meowspace.splashscreen.SplashFragment"
+        android:name="com.example.meowspace.ui.splashscreen.SplashFragment"
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash" >
         <action
             android:id="@+id/action_splashFragment_to_loginFragment"
+            app:popEnterAnim="@anim/scale_up"
+            app:popExitAnim="@anim/scale_down"
+            app:enterAnim="@anim/scale_up"
+            app:exitAnim="@anim/scale_down"
             app:destination="@id/loginFragment" />
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.example.meowspace.login.LoginFragment"
+        android:name="com.example.meowspace.ui.login.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
             android:id="@+id/action_loginFragment_to_mainPageFragment"
+            app:popEnterAnim="@anim/scale_up"
+            app:popExitAnim="@anim/scale_down"
+            app:enterAnim="@anim/scale_up"
+            app:exitAnim="@anim/scale_down"
             app:destination="@id/mainPageFragment" />
         <action
             android:id="@+id/action_loginFragment_to_registerFragment"
-            app:destination="@id/registerFragment" />
+            app:destination="@id/registerFragment"
+            app:popEnterAnim="@anim/scale_up"
+            app:popExitAnim="@anim/scale_down"
+            app:enterAnim="@anim/scale_up"
+            app:exitAnim="@anim/scale_down"
+            />
     </fragment>
     <fragment
         android:id="@+id/mainPageFragment"
-        android:name="com.example.meowspace.mainpage.MainPageFragment"
+        android:name="com.example.meowspace.ui.mainpage.MainPageFragment"
         android:label="fragment_main_page"
-        tools:layout="@layout/fragment_main_page" />
+        tools:layout="@layout/fragment_main_page" >
+        <action
+            android:id="@+id/action_mainPageFragment_to_storyFragment"
+            app:destination="@id/storyFragment"
+            app:popEnterAnim="@anim/scale_up"
+            app:popExitAnim="@anim/scale_down"
+            app:enterAnim="@anim/scale_up"
+            app:exitAnim="@anim/scale_down"/>
+
+
+    </fragment>
     <fragment
         android:id="@+id/registerFragment"
-        android:name="com.example.meowspace.register.RegisterFragment"
+        android:name="com.example.meowspace.ui.register.RegisterFragment"
         android:label="fragment_register"
         tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/storyFragment"
+        android:name="com.example.meowspace.ui.story.StoryFragment"
+        android:label="fragment_story"
+        tools:layout="@layout/fragment_story" />
 </navigation>

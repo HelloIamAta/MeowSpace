@@ -1,4 +1,4 @@
-package com.example.meowspace.splashscreen
+package com.example.meowspace.ui.splashscreen
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -35,7 +35,7 @@ class SplashFragment : Fragment(R.layout.fragment_splash) {
             override fun run() {
             viewModel.startTimer(R.id.action_splashFragment_to_loginFragment, findNavController())
             }
-        }, 5000)
+        }, 1000)
 
     }
 

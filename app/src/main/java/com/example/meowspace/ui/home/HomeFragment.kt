@@ -1,4 +1,4 @@
-package com.example.meowspace.home
+package com.example.meowspace.ui.home
 
 import androidx.fragment.app.viewModels
 import android.os.Bundle
@@ -6,6 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.NavController
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.meowspace.R
 import com.example.meowspace.adapter.StoryAdapter
@@ -50,13 +52,15 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
     private fun initObservers() {
 
-        binding?.apply {
+        val navController = findNavController()
 
+        binding?.apply {
 
             storyRecyView.apply {
                 layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
-                storyAdapter = StoryAdapter(requireContext(),storyList)
+                storyAdapter = StoryAdapter(requireContext(),storyList,navController)
                 adapter = storyAdapter
+
             }
 
         }

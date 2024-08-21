@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:backgroundTint="#FCFEFC"
     android:background="#FCFEFC"
-    tools:context=".splashscreen.SplashFragment">
+    tools:context=".ui.splashscreen.SplashFragment">
 
     <ImageView
         android:id="@+id/gifImageView"

@@ -1,4 +1,4 @@
-package com.example.meowspace.profil
+package com.example.meowspace.ui.profil
 
 import androidx.fragment.app.viewModels
 import android.os.Bundle
