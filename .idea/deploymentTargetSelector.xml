@@ -4,10 +4,10 @@
     <selectionStates>
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2024-08-22T11:35:09.177211Z">
+        <DropdownSelection timestamp="2024-08-23T10:46:12.057458Z">
           <Target type="DEFAULT_BOOT">
             <handle>
-              <DeviceId pluginId="PhysicalDevice" identifier="serial=RFCW915RV8D" />
+              <DeviceId pluginId="LocalEmulator" identifier="path=/Users/ata/.android/avd/zort.avd" />
             </handle>
           </Target>
         </DropdownSelection>

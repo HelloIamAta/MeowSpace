@@ -43,7 +43,7 @@ class StoryAdapter(
             Glide
                 .with(context)
                 .load(drawable)
-                .override(400, 400)
+                .override(70, 70)
                 .centerCrop() // or use fitcenter
                 .into(storyImg)
 

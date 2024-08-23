@@ -47,18 +47,18 @@ class PostAdapter(
 
             Glide
                 .with(context)
-                .load(drawable)
-                .override(400, 400)
+                .load(drawablex)
+                .override(335, 275)
                 .centerCrop() // or use fitcenter
-                .into(postUserImage)
+                .into(postImage)
 
 
             Glide
                 .with(context)
                 .load(drawable)
-                .override(400, 400)
+                .override(35, 35)
                 .centerCrop() // or use fitcenter
-                .into(postImage)
+                .into(postUserImage)
 
 
         }
