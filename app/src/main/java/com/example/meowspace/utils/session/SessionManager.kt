@@ -25,6 +25,7 @@ class SessionManager(private var _context: Context) {
         private const val PREF_NAME = "MeowSpace"
         private const val KEY_IS_LOGGED_IN = "KEY_IS_LOGGED_IN"
         private const val LAT = "LAT"
+        private const val TEXTLINE = "TEXTLINE"
 
     }
 
@@ -42,6 +43,14 @@ class SessionManager(private var _context: Context) {
     }
     fun getStudentLat(): String? {
         return pref.getString(LAT, "")
+    }
+
+    fun setSetLine(line: String?) {
+        editor.putString(TEXTLINE, line)
+        editor.commit()
+    }
+    fun getSetLine(): String? {
+        return pref.getString(TEXTLINE, "")
     }
 
 }
