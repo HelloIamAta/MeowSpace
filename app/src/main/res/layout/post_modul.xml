@@ -120,7 +120,6 @@
                     android:id="@+id/post_image"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/a2"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/post_user_name" />
@@ -144,7 +143,7 @@
                 tools:layout_editor_absoluteX="25dp" />
 
             <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/shapeableImageView2"
+                android:id="@+id/like_button"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="24dp"
@@ -157,17 +156,39 @@
                 app:layout_constraintVertical_bias="1.0" />
 
             <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/like_button"
+                android:id="@+id/pawtext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginBottom="10dp"
-                android:text="1"
+                android:text="Paw"
                 android:textColor="@color/black"
                 android:textSize="17sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/shapeableImageView2" />
+                app:layout_constraintStart_toEndOf="@+id/like_button" />
 
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/comment"
+                android:layout_width="38dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/meow_comment"
+                app:layout_constraintStart_toEndOf="@+id/pawtext"
+                app:layout_constraintTop_toBottomOf="@+id/post_desc" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Meow"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="1dp"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/comment"
+                app:layout_constraintTop_toBottomOf="@+id/post_desc" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
