@@ -6,23 +6,36 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import com.example.meowspace.R
+import com.example.meowspace.databinding.FragmentLoginBinding
+import com.example.meowspace.databinding.FragmentStoryBinding
 
-class StoryFragment : Fragment() {
+class StoryFragment : Fragment(R.layout.fragment_story) {
 
 
     private val viewModel: StoryViewModel by viewModels()
+    private var binding : FragmentStoryBinding? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
 
-        // TODO: Use the ViewModel
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val fbinding = FragmentStoryBinding.bind(view)
+        binding = fbinding
+
+        fbinding.closeButton.setOnClickListener {
+
+            requireActivity().supportFragmentManager.popBackStack()
+
+        }
+
+        fbinding.sendStoryMessage.setOnClickListener {
+            Toast.makeText(requireContext(), "MERVE SENI SEVIYORUM", Toast.LENGTH_SHORT).show()
+        }
+
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        return inflater.inflate(R.layout.fragment_story, container, false)
-    }
+
+
 }

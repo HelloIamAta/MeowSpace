@@ -2,7 +2,18 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.MeowSpace" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
+<!--        default splash screeni kaldirir-->
+        <item name="android:windowIsTranslucent">true</item>
     </style>
 
     <style name="Theme.MeowSpace" parent="Base.Theme.MeowSpace" />
+
+    <style name="ShapeAppearanceOverlay">
+
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item> <!-- İstediğiniz köşe yuvarlama büyüklüğünü ayarlayın -->
+    </style>
+
+
+
 </resources>

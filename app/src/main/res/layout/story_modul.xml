@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:backgroundTint="@color/white"
     android:background="@color/white"
     android:layout_marginStart="6dp"
@@ -12,18 +13,19 @@
         android:id="@+id/story_clickable"
         android:layout_width="70dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/white"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="2dp"
-        app:cardCornerRadius="50dp"
-        app:strokeWidth="3dp"
+        android:backgroundTint="@color/white"
         android:clickable="true"
+        app:cardCornerRadius="50dp"
         app:cardElevation="2dp"
         app:layout_constraintBottom_toTopOf="@+id/materialCardView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:strokeColor="@color/black">
+        app:strokeColor="@color/black"
+        app:strokeWidth="3dp"
+        tools:ignore="SpeakableTextPresentCheck">
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/story_image"
