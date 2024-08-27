@@ -50,7 +50,7 @@ class PostAdapter(
 
             Glide.with(context)
                 .load(drawablex)
-                .override(335, 325)
+                .override(335, 275)
                 .centerCrop()
                 .into(postImage)
 
